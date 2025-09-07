@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>TEST EXAM</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<nav>
+   <h3 class="exam-title">UNIT TEST</h3>
+   <h3>Subject - English</h3>
+   <h3>Class-XI</h3>
+   <h3>Marks - 25</h3>
+   <div class="exam-timer" id="examTimer">00:00:00</div>
+</nav>
+
+<div class="container">
+  <div class="timer-inputs" id="timerInputs">
+    <input type="number" id="hours" placeholder="HH" min="0">
+    <input type="number" id="minutes" placeholder="MM" min="0" max="59">
+    <input type="number" id="seconds" placeholder="SS" min="0" max="59">
+  </div>
+  <button id="startBtn" onclick="startExam()">Conduct Exam</button>
+
+  <div class="countdown" id="countdownDisplay"></div>
+  <div class="goodluck" id="goodluckText">✨ All the Best Students! ✨</div>
+  <div class="question-paper" id="questionPaper">
+    <p>
+    <span style="color: red;">1.	Answer the following questions briefly:</span><span style="color: yellow; margin-left: 30px;">(10x2=20)</span><br>
+      (a) What is mentioned in the Article 48A of the constitution of India?<br>
+      (b) What is sustainable development?<br>
+      (c) What does Mr. Lester R Brown in his thoughtful book point about the biological systems of the earth?<br>
+      (d) What does Dr. Verrier Elwin say about the hill people of Assam?<br>
+      (e) What is the difference between Kaziranga and Kenya?<br>
+      (f) What suggestion does Elwin give to the people of Assam?<br>
+      (g) What did Elwin see when he visited the Kabul village?<br>
+      (h) Who are the ones engaged in the conversation in the poem The Voice of the Rain?<br>
+      (i) How does the rain give its identity?<br>
+      (j) What do the last three lines of the poem in the brackets signify?<br>
+    </p>
+    <p>
+    <span style="color: red;"> 2.Rewrite the following sentences in their correct tense form of their verbs: </span> <span style="color: yellow; margin-left: 30px;">(1x5=5)</span><br>
+      (a) If I (be) you, I would have helped him anyhow.<br>
+      (b) His father (pass) away before he arrived.<br>
+      (c) As he (cross) the road a bus knocked him down.<br>
+      (d) I (buy) a car by 2027.<br>
+      (e) He (attempt) the administrative examinations for three years<br>
+    </p>
+  </div>
+  <div class="final-screen" id="finalScreen">
+    <h2>⏰ Time Out! Submit your answer sheet.</h2>
+    <ul>
+      <li>Full marks - 25</li>
+      <li>Pass marks - Undefined</li>
+    </ul>
+  </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
