@@ -15,7 +15,7 @@ function startExam() {
   document.getElementById('timerInputs').style.display = "none";
   document.getElementById('startBtn').style.display = "none";
 
-  let preCountdown = 2;
+  let preCountdown = 10;
   const countdownEl = document.getElementById('countdownDisplay');
   const goodluckEl = document.getElementById('goodluckText');
   countdownEl.style.display = "block";
@@ -58,4 +58,5 @@ function endExam() {
   document.getElementById('questionPaper').style.display = "none";
   document.getElementById('examTimer').style.display = "none";
   document.getElementById('finalScreen').style.display = "block";
+
 }
